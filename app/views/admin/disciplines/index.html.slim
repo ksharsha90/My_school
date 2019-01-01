@@ -1,0 +1,14 @@
+h1 Discipline
+
+= link_to 'Add New Discipline', new_admin_discipline_path, class: 'btn btn-success pull-right'
+
+table.table.table-striped.tabel-bordered.table-hover
+  thead
+    tr
+      th First Name
+      th Last Name
+      th Description
+  tbody
+    = render @diciplines      
+
+= paginate @diciplines, theme: 'twitter-bootstrap-3'
